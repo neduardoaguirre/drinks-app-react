@@ -56,3 +56,9 @@ h1 {
 .scroll::-webkit-scrollbar-track:active {
   background: #d4d4d4;
 }
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
