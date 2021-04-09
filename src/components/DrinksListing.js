@@ -8,7 +8,7 @@ const DrinksListing = () => {
   const { drinks, loading } = useContext(DrinksContext);
 
   return (
-    <div className="drinks row mt-5">
+    <div className="row mt-5">
       {loading ? <Spinner /> : null}
       {drinks.map((drink) => (
         <Drink key={drink.idDrink} drink={drink} />

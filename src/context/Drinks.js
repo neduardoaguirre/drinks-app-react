@@ -16,6 +16,7 @@ const DrinksProvider = (props) => {
         const res = await axios.get(URL);
         setLoading(false);
         setDrinks(res.data.drinks);
+        scroll();
       };
       getDrinks();
       setQuery(false);
@@ -25,6 +26,11 @@ const DrinksProvider = (props) => {
       };
     }
   }, [search, query]);
+
+  const scroll = () => {
+    const position = document.querySelector('.drinks');
+    position.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <DrinksContext.Provider

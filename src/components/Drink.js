@@ -14,7 +14,7 @@ const Drink = ({ drink }) => {
   const { setIdDrink } = useContext(RecipesContext);
 
   return (
-    <div className="col-md-6 col-lg-4 mb-3 align-self-center">
+    <div className="col-md-6 col-lg-4 mb-3 align-self-center drinks">
       <div className="card">
         <h3 className="card-header">{drink.strDrink}</h3>
         {drink.strDrinkThumb ? (
